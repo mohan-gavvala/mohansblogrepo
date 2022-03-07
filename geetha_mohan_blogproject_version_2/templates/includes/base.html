@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <title>DevBlog - Bootstrap 5 Blog Template For Developers</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- FontAwesome JS-->
+	<script defer src="{% static 'fontawesome/js/all.min.js' %}"></script>
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="{% static 'css/theme-1.css' %}">
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+    <script src="{% static 'js/highlight.min.js' %}"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+{% include "includes/sider.html" %}
+
+{% block base_html_block %}
+
+{% endblock %}
+
+{% include "includes/footer.html" %}
+    <!-- Javascript -->
+    <script src="{% static 'plugins/popper.min.js' %}"></script>
+    <script src="{% static 'plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/highlight.min.js' %}"></script>
+
+
+
+</body>
+</html>
